@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pockemon Card!</title>
+</head>
+<body>
+    <div class="bigcontainer">
+        <div class="containerL">
+            <div class ="overlayL"></div>
+            <div class="cardL"></div>
+        </div>
+        <div class="containerM">
+            <div class = "overlayM"></div>
+            <div class="cardM"></div>
+        </div>
+        <div class="containerR">
+            <div class = "overlayR"></div>
+            <div class="cardR"></div>
+        </div>
+    </div>
+
+    
+    <script>
+        var containerL = document.querySelector('.containerL')
+        var overlayL = document.querySelector('.overlayL')
+        containerL.addEventListener('mousemove', function(e){
+            var x = e.offsetX
+            var y = e.offsetY
+            var rotateY = -2/11 * x +20
+            var rotateX = 4/31 * y -20
+            overlayL.style = `background-position : ${x/5 + y/5}%`
+            containerL.style = `transform : perspective(350px) 
+            rotateY(${rotateY}deg) rotateX(${rotateX}deg)`
+        })
+            containerL.addEventListener('mouseout', function(){
+            overlayL.style = 'filter : opacity(0)'
+            containerL.style = 'transform : perspective(350px) rotateY(0deg) rotateX(0deg)'
+        })  
+
+
+        var containerM = document.querySelector('.containerM')
+        var overlayM = document.querySelector('.overlayM')
+        containerM.addEventListener('mousemove', function(e){
+            var x = e.offsetX
+            var y = e.offsetY
+            var rotateY = -2/11 * x +20
+            var rotateX = 4/31 * y -20
+            overlayM.style = `background-position : ${x/5 + y/5}%`
+            containerM.style = `transform : perspective(350px) 
+            rotateY(${rotateY}deg) rotateX(${rotateX}deg)`
+        })
+            containerM.addEventListener('mouseout', function(){
+            overlayM.style = 'filter : opacity(0)'
+            containerM.style = 'transform : perspective(350px) rotateY(0deg) rotateX(0deg)'
+        })
+
+
+        var containerR = document.querySelector('.containerR')
+        var overlayR = document.querySelector('.overlayR')
+        containerR.addEventListener('mousemove', function(e){
+            var x = e.offsetX
+            var y = e.offsetY
+            var rotateY = -2/11 * x +20
+            var rotateX = 4/31 * y -20
+            overlayR.style = `background-position : ${x/5 + y/5}%`
+            containerR.style = `transform : perspective(350px) rotateY(${rotateY}deg) 
+            rotateX(${rotateX}deg)`
+        })
+            containerR.addEventListener('mouseout', function(){
+            overlayR.style = 'filter : opacity(0)'
+            containerR.style = 'transform : perspective(350px) rotateY(0deg) rotateX(0deg)'
+        })
+    </script>
+</body>
+    
+</html>
