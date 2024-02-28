@@ -1,0 +1,96 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+.bigcontainer
+{
+    width:800px; height:310px;
+    margin: 100px auto;
+}
+.containerL
+{
+   width:220px; height:310px;
+   margin: 20px;
+   position: relative;
+   transition: all 0.1s;
+   display:inline-block;
+}
+.overlayL
+{
+    position: absolute;
+    width:220px; height:310px;
+    margin: 20px;
+    background: linear-gradient(105deg, transparent 40%,
+    rgba(255, 219, 112, 0.8) 45%,
+    rgba(255, 132, 50, 0.6) 50%,
+    transparent 54%);
+    filter: brightness(1.2) opacity(0.4);
+    background-size: 150% 150%;
+    background-position: 100%;
+}
+.cardL
+{
+    width:220px; height:310px;
+    background-size: cover;
+    margin: 20px;
+    background-image: url('./images/부스터.png');
+}
+.containerM
+{
+   width:220px; height:310px;
+   margin: 20px;
+   position: relative;
+   transition: all 0.1s;
+   display:inline-block;
+}
+.overlayM
+{
+    position: absolute;
+    width:220px; height:310px;
+    margin: 20px;
+    background: linear-gradient(105deg, transparent 40%,
+    rgba(255, 219, 112, 0.8) 45%,
+    rgba(50, 228, 255, 0.925) 50%,
+    transparent 54%);
+    filter: brightness(1.0) opacity(0.4);
+    background-size: 150% 150%;
+    background-position: 100%;
+}
+.cardM
+{
+    width:220px; height:310px;
+    background-size: cover;
+    margin: 20px;
+    background-image: url('./images/샤미드.png');
+}
+.containerR
+{
+   width:220px; height:310px;
+   margin: 20px;
+   position: relative;
+   transition: all 0.1s;
+   display:inline-block;
+}
+.overlayR
+{
+    position: absolute;
+    width:220px; height:310px;
+    margin: 20px;
+    background: linear-gradient(105deg, transparent 40%,
+    rgba(255, 219, 112, 0.8) 45%,
+    rgba(132, 50, 255, 0.6) 50%,
+    transparent 54%);
+    filter: brightness(1.0) opacity(0.4);
+    background-size: 150% 150%;
+    background-position: 100%;
+}
+.cardR
+{
+    width:220px; height:310px;
+    background-size: cover;
+    margin: 20px;
+    background-image: url('./images/쥬피썬더.png');
+}
+
+
